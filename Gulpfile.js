@@ -11,7 +11,9 @@ gulp.task('jslint', function () {
         errorsOnly: false,
         plusplus: true,
         bitwise: true,
-        todo: true
+        todo: true,
+        browser: true,
+        devel: true
       }));
 });
 

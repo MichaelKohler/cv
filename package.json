@@ -5,6 +5,7 @@
   "description": "Michael Kohler's CV",
   "dependencies" : {
     "gulp"                   :  "3.8.8",
-    "gulp-jslint"         :  "0.1.7"
+    "gulp-jslint"         :  "0.1.7",
+    "normalize.css"    :  "3.0.1"
   }
 }

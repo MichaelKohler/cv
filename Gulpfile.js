@@ -1,5 +1,14 @@
 var gulp = require('gulp');
 var jslint = require('gulp-jslint');
+var webserver = require('gulp-webserver');
+
+gulp.task('serve', function() {
+    gulp.src('app')
+            .pipe(webserver({
+                livereload: true,
+                open: true
+            }));
+});
 
 gulp.task('jslint', function () {
   return gulp.src(['./scripts/*.js'])

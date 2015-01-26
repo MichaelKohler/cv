@@ -1,7 +1,22 @@
-body {
+.chapter {
+    padding: 0 1em 1.5em 1em;
+    border-bottom: 1px solid #ccc;
+}
 
+.chapter h1 {
+    padding-top: 1.2em;
+}
+
+#aboutme {
+    padding-top: 2em;
 }
 
 .top-bar-section ul li:hover {
     background-color: #008CBA !important;
+}
+
+@media screen and (max-width: 836px) {
+    .chapter h1 {
+        padding-top: 2em;
+    }
 }

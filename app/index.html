@@ -11,31 +11,44 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<section class="fixed">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="#">mkohler.codes</a></h1>
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">mkohler.codes</a></h1>
+        </li>
+    </ul>
+    <section class="top-bar-section">
+        <ul class="right show-for-large-up">
+            <li><a href="#">Home</a></li>
+            <li><a href="#experience">Erfahrung</a></li>
+            <li><a href="#education">Ausbildung</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#passion">Freizeit</a></li>
+            <li><a href="#references">Referenzen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <ul class="right hide-for-large-up">
+            <li class="has-dropdown">
+                <a href="#">Menu</a>
+                <ul class="dropdown">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#experience">Erfahrung</a></li>
+                    <li><a href="#education">Ausbildung</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#passion">Freizeit</a></li>
+                    <li><a href="#references">Referenzen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
             </li>
         </ul>
+    </section>
+</nav>
 
-        <section class="top-bar-section">
-            <ul class="right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#experience">Erfahrung</a></li>
-                <li><a href="#education">Ausbildung</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#passion">Freizeit</a></li>
-                <li><a href="#references">Referenzen</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </section>
-    </nav>
-</section>
-
-<section id="aboutme" class="chapter">
-    <p>About me...</p>
+<section id="aboutme">
+    <h1>Michael Kohler</h1>
+    <img src="profile.png" />
 </section>
 
 <section id="experience" class="chapter">
@@ -84,9 +97,22 @@
 </section>
 
 <footer>
-
+    <div class="center">&copy; Michael Kohler</div>
+    <div class="inline-nav center">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#experience">Erfahrung</a></li>
+            <li><a href="#education">Ausbildung</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#passion">Freizeit</a></li>
+            <li><a href="#references">Referenzen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </div>
 </footer>
 
+<script src="scripts/lib/jquery.min.js"></script>
 <script src="scripts/lib/foundation.min.js"></script>
 <script src="scripts/main.js"></script>
 

@@ -1,6 +1,6 @@
 #aboutme {
     padding-top: 3.3em;
-    background: url('../background.jpg') #fff no-repeat fixed 0 -100px;
+    background: url('../images/background.jpg') #fff no-repeat fixed 0 -100px;
     background-size: cover;
     min-height: 400px;
 }
@@ -11,10 +11,14 @@
 }
 
 #aboutme img {
-    border-radius: 25%;
+    border-radius: 50%;
     width: 10vw;
     min-width: 200px;
     box-shadow: 0px 0px 10px 3px #666;
+}
+
+.additionalInfoOnRequest {
+    display: none;
 }
 
 .chapter {
@@ -23,7 +27,7 @@
 }
 
 .chapter h1 {
-    padding-top: 0.8em;
+    padding-top: 1.2em;
 }
 
 .center {
@@ -44,6 +48,23 @@ footer a:hover {
     color: #fff;
 }
 
+.icons {
+    font-size: 5em;
+}
+
+.icons i {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.icons > a {
+    color: #666;
+}
+
+.icons i:hover {
+    color: #008CBA;
+}
+
 .inline-nav {
     margin-top: 0.5em;
 }
@@ -60,6 +81,33 @@ footer a:hover {
 
 #mozillavideo {
     border-radius: 10px;
+}
+
+.phoneNumber {
+    font-size: 3em;
+}
+
+.projectentry {
+    margin-top: 3em;
+}
+
+.projectentry img {
+    width: 75vw;
+    max-width: 1100px;
+}
+
+#projects a[role="button"] {
+    margin-top: 3em;
+}
+
+.pulldown {
+    margin-top: 5em;
+}
+
+#phoneAdditional i, #addressAdditional i {
+    font-size: 3em;
+    color: #666;
+    padding-bottom: 0.5em;
 }
 
 .top-bar-section ul li:hover > a {

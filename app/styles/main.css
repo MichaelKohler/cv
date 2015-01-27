@@ -1,13 +1,12 @@
 #aboutme {
-    padding-top: 0.3em;
+    padding-top: 3.3em;
     background: url('../background.jpg') #fff no-repeat fixed 0 -100px;
     background-size: cover;
     min-height: 400px;
 }
 
 #aboutme h1 {
-    padding-left: 1em;
-    color: #eee;
+    color: #000;
     font-size: 3em;
 }
 
@@ -15,7 +14,7 @@
     border-radius: 25%;
     width: 10vw;
     min-width: 200px;
-    margin-left: 3em;
+    box-shadow: 0px 0px 10px 3px #666;
 }
 
 .chapter {
@@ -24,7 +23,7 @@
 }
 
 .chapter h1 {
-    padding-top: 1.2em;
+    padding-top: 0.8em;
 }
 
 .center {
@@ -59,17 +58,16 @@ footer a:hover {
     font-size: 0.8em;
 }
 
+#mozillavideo {
+    border-radius: 10px;
+}
+
 .top-bar-section ul li:hover > a {
     background-color: #008CBA !important;
     background: #008CBA;
 }
 
-@media screen and (max-width: 390px) {
-    #aboutme h1 {
-        color: #000;
-        font-weight: bold;
-    }
-
+@media screen and (max-width: 391px) {
     #aboutme img {
         width: 40vw;
     }
@@ -77,11 +75,14 @@ footer a:hover {
     #aboutme {
         min-height: 500px;
     }
+
+    .inline-nav {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 390px) and (max-width: 990px) {
-    #aboutme h1 {
-        color: #eee;
-        font-weight: bold;
+@media screen and (min-width: 392px) and (max-width: 990px) {
+    .inline-nav {
+        display: none;
     }
 }

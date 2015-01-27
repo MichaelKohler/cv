@@ -93,6 +93,14 @@ footer a:hover {
     font-size: 3em;
 }
 
+#presentations ul {
+    list-style-type: none;
+}
+
+#presentations ul li {
+    padding-top: 0.5em;
+}
+
 .projectentry {
     margin-top: 3em;
 }

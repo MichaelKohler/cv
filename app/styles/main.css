@@ -25,7 +25,7 @@
     border-radius: 50%;
     width: 10vw;
     min-width: 200px;
-    box-shadow: 0px 0px 10px 3px #666;
+    box-shadow: 0px 0px 10px 3px #000;
 }
 
 .additionalInfoOnRequest {
@@ -43,6 +43,10 @@
 
 .center {
     text-align: center;
+}
+
+#education table {
+    width: 100%;
 }
 
 footer {

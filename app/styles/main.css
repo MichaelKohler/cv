@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #aboutme {
     padding-top: 3.3em;
     background: url('../images/background.jpg') #fff no-repeat fixed 0 -100px;
@@ -6,8 +10,10 @@
 }
 
 #aboutme h1 {
-    color: #000;
+    color: #fff;
     font-size: 3em;
+    font-weight: bold;
+    text-shadow: -1px -1px 3px rgba(0, 0, 0, 1);
 }
 
 #aboutme img {

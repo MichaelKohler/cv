@@ -141,13 +141,7 @@ footer a:hover {
     background: #008CBA;
 }
 
-@media screen and (max-width: 391px) {
-    .inline-nav {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 392px) and (max-width: 990px) {
+@media screen and (max-width: 990px) {
     .inline-nav {
         display: none;
     }

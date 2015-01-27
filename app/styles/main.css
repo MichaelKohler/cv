@@ -48,6 +48,10 @@ body, h1, h2, h3, h4, h5, h6, p, li, table, label, div, a {
     text-align: center;
 }
 
+#copy {
+    padding-bottom: 0.5em;
+}
+
 #education table {
     width: 100%;
 }
@@ -81,10 +85,6 @@ footer a:hover {
 
 .icons i:hover {
     color: #008CBA;
-}
-
-.inline-nav {
-    margin-top: 0.5em;
 }
 
 .inline-nav ul {
@@ -141,7 +141,13 @@ footer a:hover {
     background: #008CBA;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 1024px) {
+    .inline-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .inline-nav {
         display: none;
     }

@@ -10,6 +10,8 @@ body, h1, h2, h3, h4, h5, h6, p, li, table, label, div, a {
 #aboutme {
     padding-top: 3.3em;
     min-height: 400px;
+    background: url('../images/background.jpg') 0 -300px;
+    background-size: cover;
 }
 
 #aboutme h1 {

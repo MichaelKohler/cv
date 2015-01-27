@@ -28,7 +28,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, table, label, div, a {
 }
 
 #logo img {
-    width: 50%;
+    width: 30%;
 }
 
 .additionalInfoOnRequest {
@@ -150,6 +150,10 @@ footer a:hover {
 @media screen and (max-width: 768px) {
     .inline-nav {
         display: none;
+    }
+
+    #logo img {
+        width: 80%;
     }
 }
 

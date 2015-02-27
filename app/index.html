@@ -6,6 +6,7 @@
     <meta name="description" content="Michael Kohler's CV">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="locales/locales.ini" rel="prefetch" type="application/l10n">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/lib/normalize.css">
     <link rel="stylesheet" href="styles/lib/foundation.min.css">
@@ -23,29 +24,29 @@
     </ul>
     <section class="top-bar-section">
         <ul class="right show-for-large-up">
-            <li><a href="#">Startseite</a></li>
-            <li><a href="#experience">Erfahrung</a></li>
-            <li><a href="#education">Ausbildung</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projekte</a></li>
-            <li><a href="#passion">Freizeit</a></li>
-            <li><a href="#presentations">Präsentationen</a></li>
-            <li><a href="#references">Referenzen</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#"><span data-l10n-id="home">Startseite</span></a></li>
+            <li><a href="#experience"><span data-l10n-id="experience">Erfahrung</span></a></li>
+            <li><a href="#education"><span data-l10n-id="education">Ausbildung</span></a></li>
+            <li><a href="#skills"><span data-l10n-id="skills">Skills</span></a></li>
+            <li><a href="#projects"><span data-l10n-id="projects">Projekte</span></a></li>
+            <li><a href="#passion"><span data-l10n-id="hobbies">Freizeit</span></a></li>
+            <li><a href="#presentations"><span data-l10n-id="presentations">Präsentationen</span></a></li>
+            <li><a href="#references"><span data-l10n-id="references">Referenzen</span></a></li>
+            <li><a href="#contact"><span data-l10n-id="contact">Kontakt</span></a></li>
         </ul>
         <ul class="right show-for-medium">
             <li class="has-dropdown">
-                <a href="#">Menu</a>
+                <a href="#"><span data-l10n-id="menu">Menü</span></a>
                 <ul class="dropdown">
-                    <li><a href="#">Startseite</a></li>
-                    <li><a href="#experience">Erfahrung</a></li>
-                    <li><a href="#education">Ausbildung</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projekte</a></li>
-                    <li><a href="#passion">Freizeit</a></li>
-                    <li><a href="#presentations">Präsentationen</a></li>
-                    <li><a href="#references">Referenzen</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#"><span data-l10n-id="home">Startseite</span></a></li>
+                    <li><a href="#experience"><span data-l10n-id="experience">Erfahrung</span></a></li>
+                    <li><a href="#education"><span data-l10n-id="education">Ausbildung</span></a></li>
+                    <li><a href="#skills"><span data-l10n-id="skills">Skills</span></a></li>
+                    <li><a href="#projects"><span data-l10n-id="projects">Projekte</span></a></li>
+                    <li><a href="#passion"><span data-l10n-id="hobbies">Freizeit</span></a></li>
+                    <li><a href="#presentations"><span data-l10n-id="presentations">Präsentationen</span></a></li>
+                    <li><a href="#references"><span data-l10n-id="references">Referenzen</span></a></li>
+                    <li><a href="#contact"><span data-l10n-id="contact">Kontakt</span></a></li>
                 </ul>
             </li>
         </ul>
@@ -60,108 +61,117 @@
     <img id="profilepicture" src="images/profile.png" alt="Profilbild" />
 </section>
 
-<div id="container">
+<div id="container" class="chapter">
+
+<section id="languageselector">
+    <label for="language"><span data-l10n-id="other-languages">Andere Sprachen:</span></label>
+    <select id="language" name="language" onchange="document.webL10n.setLanguage(this.value);">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+    </select>
+</section>
+
 <section id="experience" class="chapter">
-    <h1>Erfahrung</h1>
-    <p>Bereits während des Studiums arbeitete ich 40 - 60%, daher verfüge ich über eine überdurchschnittliche Berufserfahrung im Vergleich zu anderen Studenten. Heute studiere ich berufsbegleitend und kann somit 100% arbeiten, ohne das Studium in den Hintergrund zu stellen.</p>
+    <h1><span data-l10n-id="experience">Erfahrung</span></h1>
+    <p><span data-l10n-id="experience-start">Bereits während des Studiums arbeitete ich 40 - 60%, daher verfüge ich über eine überdurchschnittliche Berufserfahrung im Vergleich zu anderen Studenten. Heute studiere ich berufsbegleitend und kann somit 100% arbeiten, ohne das Studium in den Hintergrund zu stellen.</span></p>
     <table>
         <tr>
-            <td>Oktober 2014 - heute</td>
-            <td><strong>Swisscom AG</strong><br />Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support</td>
+            <td><span data-l10n-id="experience-1-title">Oktober 2014 - heute</span></td>
+            <td><strong><span data-l10n-id="experience-1-company">Swisscom AG</span></strong><br /><span data-l10n-id="experience-1-desc">Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support</span></td>
         </tr>
         <tr>
-            <td>Januar 2014 - Juni 2014</td>
-            <td><strong>Swisscom Banking Provider AG</strong><br />Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support, Applikationsverantwortung</td>
+            <td><span data-l10n-id="experience-2-title">Januar 2014 - Juni 2014</span></td>
+            <td><strong><span data-l10n-id="experience-2-company">Swisscom Banking Provider AG</span></strong><br /><span data-l10n-id="experience-2-desc">Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support, Applikationsverantwortung</span></td>
         </tr>
         <tr>
-            <td>August 2011 - Dezember 2013</td>
-            <td><strong>Entris Banking AG</strong><br />Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support, Projektmitarbeit <a href="http://www.it-markt.ch/News/2012/06/05/Entris-Banking-beendet-Grossprojekt-Trivium.aspx">Trivium</a>, <a href="http://www.inside-it.ch/articles/29405">Rialto</a></td>
+            <td><span data-l10n-id="experience-3-title">August 2011 - Dezember 2013</span></td>
+            <td><strong><span data-l10n-id="experience-3-company">Entris Banking AG</span></strong><br /><span data-l10n-id="experience-3-desc">Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support, Projektmitarbeit</span> <a href="http://www.it-markt.ch/News/2012/06/05/Entris-Banking-beendet-Grossprojekt-Trivium.aspx">Trivium</a>, <a href="http://www.inside-it.ch/articles/29405">Rialto</a></td>
         </tr>
         <tr>
-            <td>August 2010 - April 2011</td>
-            <td><strong>Entris Banking AG</strong><br />Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support, Projektmitarbeit <a href="http://www.it-markt.ch/News/2012/06/05/Entris-Banking-beendet-Grossprojekt-Trivium.aspx">Trivium</a></td>
+            <td><span data-l10n-id="experience-4-title">August 2010 - April 2011</span></td>
+            <td><strong><span data-l10n-id="experience-4-company">Entris Banking AG</span></strong><br /><span data-l10n-id="experience-4-desc">Applikationsentwickler - Document Management - Templating, Requirement Engineering, 2nd Level Support, Projektmitarbeit</span> <a href="http://www.it-markt.ch/News/2012/06/05/Entris-Banking-beendet-Grossprojekt-Trivium.aspx">Trivium</a></td>
         </tr>
     </table>
 </section>
 
 <section id="education" class="chapter">
-    <h1>Ausbildung</h1>
+    <h1><span data-l10n-id="education">Ausbildung</span></h1>
     <table>
         <tr>
-            <td>August 2013 - heute</td>
-            <td><strong>Fernfachhochschule Schweiz</strong><br />Bachelor Computer Science - 6. Semester</td>
+            <td><span data-l10n-id="education-1-title">August 2013 - heute</span></td>
+            <td><strong><span data-l10n-id="education-1-company">Fernfachhochschule Schweiz</span></strong><br /><span data-l10n-id="education-1-desc">Bachelor Computer Science - 6. Semester</span></td>
         </tr>
         <tr>
-            <td>September 2011 - Januar 2013</td>
-            <td><strong>Universität Bern</strong><br />Bachelor Computer Science (3 Semester)</td>
+            <td><span data-l10n-id="education-2-title">September 2011 - Januar 2013</span></td>
+            <td><strong><span data-l10n-id="education-2-company">Universität Bern</span></strong><br /><span data-l10n-id="education-2-desc">Bachelor Computer Science (3 Semester)</span></td>
         </tr>
         <tr>
-            <td>August 2006 - Juli 2010</td>
-            <td><strong>Gymnasium Neufeld Bern</strong><br />Matura</td>
+            <td><span data-l10n-id="education-3-title">August 2006 - Juli 2010</span></td>
+            <td><strong><span data-l10n-id="education-3-company">Gymnasium Neufeld Bern</span></strong><br /><span data-l10n-id="education-3-desc">Matura</span></td>
         </tr>
     </table>
 </section>
 
 <section id="skills" class="chapter">
-    <h1>Skills</h1>
+    <h1><span data-l10n-id="skills">Skills</span></h1>
     <div class="row center">
         <div class="small-12 medium-6 large-4 columns">
-            <h3>Software Entwicklung</h3>
-            <label>Projektmitarbeit</label>
+            <h3><span data-l10n-id="skills-1-title">Software Entwicklung</span></h3>
+            <label><span data-l10n-id="skills-1-1-title">Projektmitarbeit</span></label>
             <div class="progress">
                 <span class="meter" style="width: 100%"></span>
             </div>
-            <label>Test driven development</label>
+            <label><span data-l10n-id="skills-1-2-title">Test driven development</span></label>
             <div class="progress">
                 <span class="meter" style="width: 70%"></span>
             </div>
-            <label>Git</label>
+            <label><span data-l10n-id="skills-1-3-title">Git</span></label>
             <div class="progress">
                 <span class="meter" style="width: 70%"></span>
             </div>
-            <label>MongoDB</label>
+            <label><span data-l10n-id="skills-1-4-title">MongoDB</span></label>
             <div class="progress">
                 <span class="meter" style="width: 70%"></span>
             </div>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-            <h3>Web Entwicklung</h3>
-            <label>Einhaltung von Standards</label>
+            <h3><span data-l10n-id="skills-2-title">Web Entwicklung</span></h3>
+            <label><span data-l10n-id="skills-2-1-title">Einhaltung von Standards</label>
             <div class="progress">
                 <span class="meter" style="width: 100%"></span>
             </div>
-            <label>HTML</label>
+            <label><span data-l10n-id="skills-2-2-title">HTML</span></label>
             <div class="progress">
                 <span class="meter" style="width: 100%"></span>
             </div>
-            <label>JavaScript / NodeJS</label>
+            <label><span data-l10n-id="skills-2-3-title">JavaScript / NodeJS</span></label>
             <div class="progress">
                 <span class="meter" style="width: 95%"></span>
             </div>
-            <label>CSS</label>
+            <label><span data-l10n-id="skills-2-4-title">CSS</span></label>
             <div class="progress">
                 <span class="meter" style="width: 50%"></span>
             </div>
-            <label>Ruby / PHP</label>
+            <label><span data-l10n-id="skills-2-5-title">Ruby / PHP</span></label>
             <div class="progress">
                 <span class="meter" style="width: 30%"></span>
             </div>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-            <h3>Sprachen</h3>
-            <label>Deutsch</label>
+            <h3><span data-l10n-id="skills-3-title">Sprachen</span></h3>
+            <label><span data-l10n-id="skills-3-1-title">Deutsch</span></label>
             <div class="progress">
                 <span class="meter" style="width: 100%"></span>
             </div>
-            <label>Englisch</label>
+            <label><span data-l10n-id="skills-3-2-title">Englisch</span></label>
             <div class="progress">
                 <span class="meter" style="width: 95%"></span>
             </div>
-            <label>Französisch (auffrischbar)</label>
+            <label><span data-l10n-id="skills-3-3-title">Französisch (auffrischbar)</span></label>
             <div class="progress">
                 <span class="meter" style="width: 30%"></span>
             </div>
-            <label>Spanisch</label>
+            <label><span data-l10n-id="skills-3-4-title">Spanisch</span></label>
             <div class="progress">
                 <span class="meter" style="width: 20%"></span>
             </div>
@@ -170,49 +180,54 @@
 </section>
 
 <section id="projects" class="chapter">
-    <h1>Projekte</h1>
+    <h1><span data-l10n-id="projects">Projekte</span></h1>
 
     <div class="center">
         <div class="projectentry">
             <img src="images/picobudget.png" alt="Screenshot PicoBudget.com" />
             <div class="caption">
-                PicoBudget.com : Verwalten von Ausgaben (NodeJS, Bootstrap)
+                <span data-l10n-id="projects-1-desc">PicoBudget.com : Verwalten von Ausgaben (NodeJS, Bootstrap)</span>
             </div>
         </div>
         <div class="projectentry">
             <img src="images/cobra.png" alt="Screenshot COBRA" />
             <div class="caption">
-                COBRA : einfaches, selbst geschriebenes CMS (NodeJS, AngularJS)
+                <span data-l10n-id="projects-2-desc">COBRA : einfaches, selbst geschriebenes CMS (NodeJS, AngularJS)</span>
             </div>
         </div>
         <div class="projectentry">
             <img src="images/firefox10.png" alt="Screenshot arewetenyet.com" />
             <div class="caption">
-                arewetenyet.com : Countdown zum 10. Geburtstag von Firefox - das war am 09.11.2014 (JavaScript)
+                <span data-l10n-id="projects-3-desc">arewetenyet.com : Countdown zum 10. Geburtstag von Firefox - das war am 09.11.2014 (JavaScript)</span>
             </div>
         </div>
     </div>
 
     <aside class="center">
-        <a role="button" target="_blank" href="https://github.com/MichaelKohler/" class="button extend">Weitere Projekte auf GitHub</a>
+        <a role="button" target="_blank" href="https://github.com/MichaelKohler/" class="button extend"><span data-l10n-id="further-projects">Weitere Projekte auf GitHub</span></a>
     </aside>
 </section>
 
 <section id="passion" class="chapter">
-    <h1>Freizeit</h1>
-    <p>Seit 2008 arbeite ich als Freiwilliger in der Mozilla Community mit. Zu Beginn habe ich <a href="https://bugzilla.mozilla.org/buglist.cgi?quicksearch=ALL %40mkohler">Patches</a> für Firefox erstellt. Mittlerweile engagiere ich mich als <a href="https://reps.mozilla.org/u/michaelkohler/">Mozilla Rep</a> mit Fokus auf "Community Building". Seit 2012 helfe ich mit, die deutschsprachige Community zu organisieren und veranstalte Events in der <a href="http://www.meetup.com/Mozilla-Meetup-Switzerland/">Schweiz</a>, <a href="http://www.mozilla.de">Deutschland</a> und Österreich.</p>
-    <p>Mit meiner Überzeugung, dass wir alle für ein offenes Web einstehen müssen, passt dies wunderbar zu meiner Arbeit für Mozilla.</p>
+    <h1><span data-l10n-id="hobbies">Freizeit</h1>
+    <p><span data-l10n-id="hobbies-1-desc">Seit 2008 arbeite ich als Freiwilliger in der Mozilla Community mit. Zu Beginn habe ich Patches für Firefox erstellt. Mittlerweile engagiere ich mich als Mozilla Rep mit Fokus auf "Community Building". Seit 2012 helfe ich mit, die deutschsprachige Community zu organisieren und veranstalte Events in der Schweiz, Deutschland und Österreich.</span></p>
+    <ul>
+        <li>Bugzilla: <a href="https://bugzilla.mozilla.org/buglist.cgi?quicksearch=ALL %40mkohler">bugzilla.mozilla.org</a></li>
+        <li>Mozilla Reps: <a href="https://reps.mozilla.org/u/michaelkohler/">reps.mozilla.org</a></li>
+        <li>Mozilla Switzerland: <a href="http://www.meetup.com/Mozilla-Meetup-Switzerland/">meetup.com</a></li>
+    </ul>
+    <p><span data-l10n-id="hobbies-2-desc">Mit meiner Überzeugung, dass wir alle für ein offenes Web einstehen müssen, passt dies wunderbar zu meiner Arbeit für Mozilla.</span></p>
     <div class="center flex-video">
         <iframe id="mozillavideo" src="https://www.youtube-nocookie.com/embed/LtOGa5M8AuU?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <aside class="center pulldown">
-        <a role="button" href="https://michaelkohler.info" class="button extend">Mein Blog</a>
+        <a role="button" href="https://michaelkohler.info" class="button extend"><span data-l10n-id="my-blog">Mein Blog</span></a>
     </aside>
 </section>
 
 <section id="presentations" class="chapter">
-    <h1>Präsentationen</h1>
+    <h1><span data-l10n-id="presentations">Präsentationen</h1>
     <ul>
         <li><a href="../presentations/mozilla-switzerland/index.html">Some information about Mozilla Switzerland</a>, Mozilla Berlin, 20.02.2015</li>
         <li><a href="../presentations/firefoxosappday-frankfurt/index.html">Firefox OS App Day Frankfurt</a>, Frankfurt, 22.11.2014</li>
@@ -233,16 +248,16 @@
 </section>
 
 <section id="references" class="chapter">
-    <h1>Referenzen</h1>
-    <p>Aus Rücksicht auf die Privatsphäre aller beteiligten Personen verzichte ich auf die Veröffentlichung von Zeugnissen, Arbeitsbewertungen und dergleichen. Auf Anfrage gebe ich diese natürlich gerne heraus.</p>
+    <h1><span data-l10n-id="references">Referenzen</span></h1>
+    <p><span data-l10n-id="references-1-begin">Aus Rücksicht auf die Privatsphäre aller beteiligten Personen verzichte ich auf die Veröffentlichung von Zeugnissen, Arbeitsbewertungen und dergleichen. Auf Anfrage gebe ich diese natürlich gerne heraus.</span></p>
 </section>
 
 <section id="contact" class="chapter">
-    <h1>Kontakt</h1>
+    <h1><span data-l10n-id="contact">Kontakt</span></h1>
     <div class="center icons">
-        <a href="mailto:mkohler@picobudget.com"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://www.twitter.com/KohlerSolutions"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.xing.com/profile/Michael_Kohler36"><i class="fa fa-xing"></i></a>
+        <a href="mailto:mkohler@picobudget.com"><i class="fa fa-envelope-o">Mail</i></a>
+        <a href="https://www.twitter.com/KohlerSolutions"><i class="fa fa-twitter">Twitter</i></a>
+        <a href="https://www.xing.com/profile/Michael_Kohler36"><i class="fa fa-xing">Xing</i></a>
     </div>
 
     <div id="phoneAdditional" class="center pulldown">
@@ -262,21 +277,22 @@
     <div class="inline-nav center">
         <ul>
             <!-- HTML Imports würde gegen die Duplizierung helfen.. -->
-            <li><a href="#">Startseite</a></li>
-            <li><a href="#experience">Erfahrung</a></li>
-            <li><a href="#education">Ausbildung</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projekte</a></li>
-            <li><a href="#passion">Freizeit</a></li>
-            <li><a href="#presentations">Präsentationen</a></li>
-            <li><a href="#references">Referenzen</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#"><span data-l10n-id="home">Startseite</span></a></li>
+            <li><a href="#experience"><span data-l10n-id="experience">Erfahrung</span></a></li>
+            <li><a href="#education"><span data-l10n-id="education">Ausbildung</span></a></li>
+            <li><a href="#skills"><span data-l10n-id="skills">Skills</span></a></li>
+            <li><a href="#projects"><span data-l10n-id="projects">Projekte</span></a></li>
+            <li><a href="#passion"><span data-l10n-id="hobbies">Freizeit</span></a></li>
+            <li><a href="#presentations"><span data-l10n-id="presentations">Präsentationen</span></a></li>
+            <li><a href="#references"><span data-l10n-id="references">Referenzen</span></a></li>
+            <li><a href="#contact"><span data-l10n-id="contact">Kontakt</span></a></li>
         </ul>
     </div>
 </footer>
 
 <script src="scripts/lib/jquery.min.js"></script>
 <script src="scripts/lib/foundation.min.js"></script>
+<script src="scripts/lib/l10n.js" defer></script>
 <script src="scripts/main.js" defer></script>
 
 </body>

@@ -295,22 +295,6 @@ slides > slide.far-next {
 slides > slide.dark {
   background: #515151 !important;
 }
-/* line 171, ../scss/default.scss */
-slides > slide:not(.nobackground):before {
-  font-size: 12pt;
-  content: "#";
-  position: absolute;
-  bottom: 20px;
-  left: 60px;
-  background: url(../../imgs/foxy_128.png) no-repeat 0 50%;
-  -webkit-background-size: 30px 30px;
-  -moz-background-size: 30px 30px;
-  -o-background-size: 30px 30px;
-  background-size: 30px 30px;
-  padding-left: 40px;
-  height: 30px;
-  line-height: 1.9;
-}
 /* line 183, ../scss/default.scss */
 slides > slide:not(.nobackground):after {
   font-size: 12pt;
@@ -1570,12 +1554,23 @@ video {
     font-weight: 200;
 }
 
-slides > slide:not(.nobackground)::before {
-    content: "#MozillaCH";
-    font-family: 'Fira Mono', 'Courier New', monospace;
-    font-weight: 400;
-    z-index: 999;
-    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF, 0 0 0.4em #FFF, 0 -1px #FFF, 1px 0 #FFF, 0 1px #FFF, -1px 0 #FFF;
+slides > slide:not(.nobackground):not(.blue)::before {
+  font-size: 12pt;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  height: 30px;
+  line-height: 1.9;
+  content: "#MozillaCH";
+  font-family: 'Fira Mono', 'Courier New', monospace;
+  font-weight: 400;
+  z-index: 999;
+  text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF, 0 0 0.4em #FFF, 0 -1px #FFF, 1px 0 #FFF, 0 1px #FFF, -1px 0 #FFF;
 }
 
 slides > slide:not(.nobackground)::after {

@@ -1378,6 +1378,19 @@ slide.blue {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0095dd', endColorstr='#00539f', GradientType=0);
 }
 
+.center-image-slide {
+  text-align: center;
+}
+
+.center-image {
+  margin-top: 50px;
+}
+
+.smaller-image {
+  width: 60vw;
+  height: auto;
+}
+
 #firefox-os-flame-reference-device {
     width: 400px;
     position: absolute;

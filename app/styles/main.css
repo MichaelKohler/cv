@@ -39,6 +39,10 @@ body, h1, h2, h3, h4, h5, h6, p, li, table, label, div, a {
     border-bottom: 1px solid #ccc;
 }
 
+.chapter:last-child {
+  border-bottom: 0px;
+}
+
 .chapter h1 {
     padding-top: 1.2em;
 }
